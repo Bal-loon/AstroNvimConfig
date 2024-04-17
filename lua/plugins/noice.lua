@@ -4,7 +4,7 @@ return {
     config.views = {
       cmdline_popup = {
         position = {
-          row = 20,
+          row = 24,
           col = "50%",
         },
         border = {
@@ -16,11 +16,11 @@ return {
           winhighlight = "NormalFloat:NormalFloat,FloatBorder:FloatBorder",
         },
       },
-      popupmenu = {
+      cmdline_popupmenu = {
         -- relative = "editor",
         position = {
           row = 28,
-          col = "50%",
+          col= "50%",
         },
       },
     }
