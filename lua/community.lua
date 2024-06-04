@@ -11,5 +11,8 @@ return {
   { import = "astrocommunity.colorscheme.catppuccin" },
   { import = "astrocommunity.utility.noice-nvim" },
   { import = "astrocommunity.recipes.heirline-nvchad-statusline" },
+
+  -- Language packs
+  { import = "astrocommunity.pack.rust" },
   -- import/override with your plugins folder
 }
