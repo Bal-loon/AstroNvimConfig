@@ -26,9 +26,9 @@ return {
           -- use helper function to get highlight group properties
           local comment_fg = get_hlgroup("Comment").fg
           hl.git_branch_fg = comment_fg
-          hl.git_added = comment_fg
-          hl.git_changed = comment_fg
-          hl.git_removed = comment_fg
+          hl.git_added = "lightgreen"
+          hl.git_changed = "orange"
+          hl.git_removed = "lightred"
           hl.blank_bg = get_hlgroup("Folded").fg
           hl.file_info_bg = get_hlgroup("Visual").bg
           hl.nav_icon_bg = get_hlgroup("String").fg
@@ -96,6 +96,7 @@ return {
         status.component.git_branch {
           git_branch = { padding = { left = 1 } },
           surround = { separator = "none" },
+          hl = { fg = "fg" },
         },
         -- add a component for the current git diff if it exists and use no separator for the sections
         status.component.git_diff {
