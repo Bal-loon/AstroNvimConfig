@@ -86,7 +86,15 @@ return {
           filename = { fallback = "Empty" },
           -- disable some of the info
           filetype = false,
-          file_read_only = false,
+          -- maybe we need some extra display style setting here
+          file_read_only = {},
+          file_encoding = {
+            provider = function()
+              local enc = (vim.bo.fenc ~= "" and vim.bo.fenc) or vim.o.enc -- :h 'enc'
+              return enc ~= "utf-8" and enc:upper()
+            end,
+            padding = { left = 1, right = 1 },
+          },
           -- add padding
           padding = { right = 1 },
           -- define the section separator
