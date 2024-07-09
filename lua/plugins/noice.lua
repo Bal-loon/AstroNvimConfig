@@ -4,7 +4,7 @@ return {
     config.views = {
       cmdline_popup = {
         position = {
-          row = 24,
+          -- row = 24,
           col = "50%",
         },
         border = {
@@ -19,8 +19,8 @@ return {
       cmdline_popupmenu = {
         -- relative = "editor",
         position = {
-          row = 28,
-          col= "50%",
+          -- row = 28,
+          col = "50%",
         },
       },
     }
